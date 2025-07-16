@@ -1,0 +1,117 @@
+body{
+  background-color: #f0f4f8;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  max-width: 500px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.headingcontainer{
+  background-color: #3498db;
+  margin: 20px auto;
+  padding: 7px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  max-width: 500px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Input and Textarea */
+.container input,
+.container textarea {
+  width: 90%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  resize: vertical;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 15px;
+  font-size: 0.8rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 8px 10px 8px 30px;
+  transition: background-color 0.3s ease;
+}
+.addbtn{
+  width:90%;
+  padding: 10px 15px;
+  font-size: 0.8rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 8px 10px 8px 30px;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #2c80b4;
+}
+
+/* List */
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+li {
+  font-size: 1rem;
+  padding: 10px 0;
+  list-style-type: disc;
+  color: #333;
+}
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.complete li{
+  text-decoration: line-through;
+}
+.heading{
+  text-decoration: underline;
+  text-align: center;
+}
+.status{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 16px;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 8px 0;
+    text-align: center;
+  }
+
+  li {
+    font-size: 0.95rem;
+  }
+  .status{
+    width: 90%;
+    flex-wrap: wrap;
+  }
+}

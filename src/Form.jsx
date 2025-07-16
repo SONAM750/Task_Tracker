@@ -104,7 +104,7 @@ const [item, addItem] = useState(() => {
           </div>
         
         <div>
-          {item.todo.length==null?<Msg />:  <ol>
+          {item.todo.length===0?<Msg />:  <ol>
        { item.todo.map((item,i)=>
          <Todoitem key={i} todo={item} index={i} 
          onToggle={toggleComplete} ondel={handledel} onEdit={handleEdit} />
